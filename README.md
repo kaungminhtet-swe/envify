@@ -84,21 +84,12 @@ DEBUG: true
 
 ## API Reference
 
-### `envify.Load(filepath ...string) error`
+### `envify.Load(filepath ...string)`
 
 Loads environment variables from a `.env` file.
 
 - **filepath (optional)**: Path to the `.env` file. If not specified, it defaults to `./.env`.
 - **Panic on error**: An `error` if the file cannot be read.
-
-Example:
-
-```go
-err := envify.Load("config.env")
-if err != nil {
-	log.Fatal("Error loading .env file", err)
-}
-```
 
 ## Contributing
 
